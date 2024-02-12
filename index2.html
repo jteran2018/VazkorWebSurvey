@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <style></style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center">
+    <header>
+        <h1 class="navbar-brand">Vazkor Technologies</h1>
+    </header>
+    </nav>
+    <div class="container min-vh-100 d-flex justify-content-center align-items-center">
+    <form id="surveyForm">
+        <div class="mb-3">
+            <label for="fullname" class="form-label">First and Last name: </label>
+            <input type="text" class="form-control" id="fullName" name="fullName" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email: </label>
+            <input type="email" class="form-control" id="emailAddress" name="emailAddress" required>
+        <div id="emailmessage" class="form-text">We'll never share your email. We pinky promise</div>
+        </div>
+        <div class="mb-3">
+            <label for="graduation" class="form-label">Graduation Year: </label>
+            <input type="month" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="major">Major: </label>
+            <input type="text" class="form-control" id="major" name="major" required>
+        </div>
+        <div class="mb-3">
+            <label for="linkedin">Linked In: </label>
+            <input type="text" class="form-control" id="linkedin" name="linkedin" required>
+        </div>
+        <div class="mb-3">
+            <label for="resume">Resume Upload:</label>
+            <input type="file" class="form-control" id="resume" name="resume" required>
+        </div>
+        <div class="mb-3">
+            <label for="picture">Picture (Optional): </label>
+            <input type="file" accept="image/*" class="form-control" id="picture" name="picture">
+        </div>
+        <button onclick="submitForm()" type="button" class="btn btn-primary">Submit</button>
+        <div> </div>
+    </form>
+    </div>
+    <footer>
+        <p style="position: fixed; bottom: -10px; right: 5px;">Made with Love</p>
+    </footer>
+</body>
+</html>
